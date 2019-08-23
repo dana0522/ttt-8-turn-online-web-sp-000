@@ -29,6 +29,7 @@ def input_to_index(index)
   index=index.to_i-1
 end
 
+<<<<<<< HEAD
 def position_taken?(board,index)
   index=index.to_i
   if board[index]==" "
@@ -40,6 +41,10 @@ end
 
 def valid_move?(board,index)
   if index.between?(0,8) && position_taken?(board,index) == FALSE
+=======
+def valid_move?(board,index)
+  if index.between?(1,9) && board[index]=" "
+>>>>>>> 0bdb1d9be4fcf556cb61fbe72393e4922718db8a
     return TRUE
   else 
     return FALSE
